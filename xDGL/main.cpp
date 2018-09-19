@@ -11,7 +11,16 @@ const char *WIN_TITLE = "xDGL";
 
 int main()
 {
-	Window *window = new Window(SCR_WIDTH, SCR_HEIGHT, WIN_TITLE, WINDOWED);
+	Window *window;
+	try
+	{
+		 window = new Window(SCR_WIDTH, SCR_HEIGHT, WIN_TITLE, WINDOWED);
+	}
+	catch (const char *msg)
+	{
+		fprintf(stderr, "%s\n", msg);
+		return EXIT_FAILURE;
+	}
 
 	while (!glfwWindowShouldClose(window->getWindow()))
 	{
@@ -25,6 +34,7 @@ int main()
 	}
 
 	glfwTerminate();
+
 	return 0;
 }
 

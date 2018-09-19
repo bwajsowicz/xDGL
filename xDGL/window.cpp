@@ -11,19 +11,14 @@ Window::Window(const unsigned int width, const unsigned int height,
 
 	if (window == NULL)
 	{
-		printf("%s\n", "Failed to create GLFW window");
-		glfwTerminate();
-		//TODO: Implement function for handling different errors.
+		throw "Failed to create GLFW window.";
 	}
 
 	glfwMakeContextCurrent(window);
 	glfwSetFramebufferSizeCallback(window, framebufferSizeCallback);
 
 	if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
-	{
-		printf("%s\n", "Failed to initialize GLAD.");
-		//TODO: Implement function for handling different errors.
-	}
+		throw "Failed to initialize GLAD.";
 }
 
 bool Window::isWindowActive() { return glfwWindowShouldClose(window); }
