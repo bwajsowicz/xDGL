@@ -18,7 +18,7 @@ int main()
 	}
 	catch (const char *msg)
 	{
-		fprintf(stderr, "%s\n", msg);
+		std::cerr << msg << std::endl;
 		return EXIT_FAILURE;
 	}
 

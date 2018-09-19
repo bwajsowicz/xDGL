@@ -7,9 +7,9 @@ Window::Window(const unsigned int width, const unsigned int height,
 	setHints();
 
 	window = glfwCreateWindow(width, height, title,
-		(windowMode == FULLSCREEN) ? glfwGetPrimaryMonitor() : NULL, NULL);
+		(windowMode == FULLSCREEN) ? glfwGetPrimaryMonitor() : nullptr, nullptr);
 
-	if (window == NULL)
+	if (window == nullptr)
 	{
 		throw "Failed to create GLFW window.";
 	}
