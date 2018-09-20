@@ -1,7 +1,7 @@
 #include "stdafx.h"
 
-#define OPENGL_VERSION_MAJOR 3
-#define OPENGL_VERSION_MINOR 3
+constexpr auto OPENGL_VERSION_MAJOR = 3;
+constexpr auto OPENGL_VERSION_MINOR = 3;
 
 enum WindowMode
 {
