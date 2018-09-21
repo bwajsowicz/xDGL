@@ -63,6 +63,7 @@ int main()
 		glClear(GL_COLOR_BUFFER_BIT);
 
 		basic.Use();
+		basic.SetVector4f("TestUniform", glm::vec4(1.0f, 0.0f, 0.0f, 0.0f));
 		glBindVertexArray(VAO);
 		glDrawArrays(GL_TRIANGLES, 0, 3);
 
