@@ -3,6 +3,10 @@
 #include "window.h"
 #include "resource_manager.h"
 
+#ifdef _DEBUG
+#include "debug.h"
+#endif
+
 void processInput(GLFWwindow *window);
 
 // settings
@@ -22,6 +26,10 @@ int main()
 		std::cerr << msg << std::endl;
 		return EXIT_FAILURE;
 	}
+
+	#ifdef _DEBUG
+	printDebugData();
+	#endif
 
 	Shader basic = ResourceManager::LoadShader("basic.vert", "basic.frag", nullptr, "basic");
 
