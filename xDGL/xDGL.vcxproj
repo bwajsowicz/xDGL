@@ -70,11 +70,11 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\OpenGL\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\Dzikie_Poziomki\source\repos\xDGL\xDGL\headers;C:\OpenGL\include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\OpenGL\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>C:\OpenGL\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\Dzikie_Poziomki\source\repos\xDGL\xDGL\headers;C:\OpenGL\include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\OpenGL\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -138,25 +138,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="debug.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="resource_manager.cpp" />
-    <ClCompile Include="shader.cpp" />
-    <ClCompile Include="shader.h" />
-    <ClCompile Include="stdafx.cpp" />
-    <ClCompile Include="texture.cpp" />
-    <ClCompile Include="window.cpp" />
+    <ClCompile Include="src\debug.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\resource_manager.cpp" />
+    <ClCompile Include="src\shader.cpp" />
+    <ClCompile Include="src\stdafx.cpp" />
+    <ClCompile Include="src\texture.cpp" />
+    <ClCompile Include="src\window.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="debug.h" />
-    <ClInclude Include="resource_manager.h" />
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="texture.h" />
-    <ClInclude Include="window.h" />
+    <ClInclude Include="headers\debug.h" />
+    <ClInclude Include="headers\resource_manager.h" />
+    <ClInclude Include="headers\shader.h" />
+    <ClInclude Include="headers\stdafx.h" />
+    <ClInclude Include="headers\texture.h" />
+    <ClInclude Include="headers\window.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="basic.frag" />
-    <None Include="basic.vert" />
+    <None Include="resources\shaders\fragment\basic.frag" />
+    <None Include="resources\shaders\vertex\basic.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
