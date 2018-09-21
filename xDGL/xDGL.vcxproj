@@ -70,12 +70,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\Dzikie_Poziomki\source\repos\xDGL\xDGL\headers;C:\OpenGL\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\OpenGL\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)\xDGL\headers;$(SolutionDir)\xDGL\dependencies\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\xDGL\dependencies\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>C:\Users\Dzikie_Poziomki\source\repos\xDGL\xDGL\headers;C:\OpenGL\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\OpenGL\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)\xDGL\headers;$(SolutionDir)\xDGL\dependencies\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\xDGL\dependencies\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>C:\Users\Dzikie_Poziomki\Desktop\OpenGL\include;$(IncludePath)</IncludePath>
@@ -100,7 +100,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\OpenGL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\xDGL\dependencies\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>opengl32.lib;glfw3.lib;glm_static.lib;glad.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -129,7 +129,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\OpenGL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\xDGL\dependencies\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
